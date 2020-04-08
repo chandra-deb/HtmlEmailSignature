@@ -72,10 +72,25 @@
             border-radius: 5px;
             }
 
-            #s-link:hover{
-                background-color:pink;
-                transition: .4s ease-out;
+
+            #s-link:hover {
+                background-color: pink;
+                cursor: pointer;
+                -webkit-transition: background-color .5s ease-out;
+                -moz-transition: background-color .5s ease-out;
+                -o-transition: background-color .5s ease-out;
+                transition: background-color .5s ease-out;
             }
+
+
+    /* transition: background-color 250ms,border-color 250ms,color 250ms;
+    transition-property: background-color, border-color, color;
+    transition-duration: 250ms, 250ms, 250ms;
+    transition-timing-function: ease, ease, ease;
+    transition-delay: 0s, 0s, 0s;
+ */
+
+
         
         /* #address p{
             line-height: 0px;
