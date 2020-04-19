@@ -3,18 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
     <title>Document</title>
+    <style>
+        .fas, .far {
+            color: pink;
+        }
+      .item3  a {
+            text-decoration:  none;
+            background-color: salmon;
+            color:  white;
+            padding:  10px 15px;
+            border-radius:  5px;
+        }
+        .container {
+            display: grid;
+            background:  powderblue;
+            grid-template-columns:  150px 180px;
+            grid-template-rows:  auto auto auto;
+            padding:  20px;
+            justify-items: center;
+        }
+
+        .item1 {
+            background-color: powderblue;
+            justify-self: center;
+        }
+
+        .item2 {
+            line-height:  5px;
+            justify-self: start;
+            align-self:  end;
+            border-bottom:  2px solid red;
+        }
+        .item3 {
+            margin-top: 20px;
+            justify-self: center;
+            align-self:  flex-start;
+        }
+
+        .item4 {
+            grid-row:  span 2;
+            justify-self: start;
+        }
+
+        .item4 p {
+            margin-bottom: 1px;
+            margin-top:  6px;
+
+        }
+
+    </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <img src="1.gif" alt="" srcset="">
-            </td>
-            <td>
-                
-            </td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="item1"><img src="1.gif" alt="" srcset=""></div>
+        <div class="item2">
+            <h1>John Smith</h1>
+            <p>Marketer</p>
+            <p>Marketing | HubSpot</p>
+            <p>He / Him</p>
+        </div>
+        <div class="item3">
+            <a href="#">Portfolio</a>
+        </div>
+        <div class="item4">
+            <p><i class="fas fa-phone-alt"></i>893 984 220</p>
+        <p><i class="far fa-envelope"></i>john@smith.com</p>
+        <p>
+          <i class="fas fa-link"></i
+          ><a href="https://www.ceospeaking.com" target="_blank"
+            >CeoSpeaking.com</a
+          >
+        </p>
+        <p><i class="fas fa-map-marker-alt"></i>Huzao, China</p>
+        </div>
+        <div class="item5">5</div>
+    </div>
 </body>
 </html>
